@@ -38,7 +38,7 @@ export default function AjoutItemForm() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/menu", {
+      const res = await fetch("https://maresturant.onrender.com/api/menu", {
         method: "POST",
         body: formData
       });
