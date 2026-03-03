@@ -11,7 +11,7 @@ const Menuorder = ({ titre }) => {
     const fetchMenus = async () => {
       try {
         const categorieUrl = titre.toLowerCase().trim(); // nettoyage du titre
-        const response = await fetch(`http://localhost:5000/api/menu/${categorieUrl}`);
+        const response = await fetch(`https://maresturant.onrender.com/api/menu/${categorieUrl}`);
 
         if (!response.ok) {
           throw new Error(`Erreur HTTP: ${response.status}`);
