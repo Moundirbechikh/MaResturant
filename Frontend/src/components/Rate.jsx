@@ -10,7 +10,7 @@ const Rate = () => {
   useEffect(() => {
     const fetchRatings = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/Rate");
+        const response = await fetch("https://maresturant.onrender.com/api/Rate");
         if (!response.ok) throw new Error(`Erreur HTTP: ${response.status}`);
         const data = await response.json();
         setRatings(data);
