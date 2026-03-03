@@ -13,7 +13,8 @@ const Dynamiccard = ({ text, onClick }) => {
       setBgIndex((prev) => (prev + 1) % backgrounds.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // ✅ On garde [] car backgrounds est constant
 
   return (
     <div
