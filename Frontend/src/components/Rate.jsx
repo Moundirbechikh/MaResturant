@@ -54,7 +54,7 @@ const Rate = () => {
       style={{ backgroundImage: "url('../back2.png')" }}
       id="rating"
     >
-      <div className="absolute top-10 text-center w-full">
+      <div className="absolute top-10 text-center w-full mb-0 sm:mb-5 md:mt-0">
         <h1 className="text-5xl sm:text-6xl md:text-8xl font-cursive text-white">
           Les <span className="text-red-600">avis</span> de nos clients
         </h1>
