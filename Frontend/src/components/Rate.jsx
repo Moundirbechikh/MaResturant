@@ -61,7 +61,7 @@ const Rate = () => {
       </div>
 
       {/* Carrousel responsive */}
-      <div className="relative w-full max-w-4xl flex justify-center items-center mt-20">
+      <div className="relative w-full max-w-4xl flex justify-center items-center mt-20 sm:mt-28 md:mt-20">
         {ratings.map((card, i) => {
           const position = getPosition(i);
           return (
