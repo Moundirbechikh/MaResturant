@@ -8,7 +8,7 @@ export default function RateEquipe() {
 
   const fetchRatings = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/rate");
+      const res = await fetch("https://maresturant.onrender.com/api/rate");
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       setAvis(data);
