@@ -9,7 +9,7 @@ export default function MenuTable() {
   useEffect(() => {
     const fetchMenus = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/menu");
+        const res = await fetch("https://maresturant.onrender.com/api/menu");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         setMenus(data);
@@ -25,7 +25,7 @@ export default function MenuTable() {
 
   const toggleDisponibilite = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/menu/${id}/disponible`, {
+      const res = await fetch(`https://maresturant.onrender.com/api/menu/${id}/disponible`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
       });
@@ -36,7 +36,7 @@ export default function MenuTable() {
       }
 
       await res.json();
-      const refresh = await fetch("http://localhost:5000/api/menu");
+      const refresh = await fetch("https://maresturant.onrender.com/api/menu");
       const refreshedMenus = await refresh.json();
       setMenus(refreshedMenus);
     } catch (err) {
