@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Exemple global (ajoute dans index.css) */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000; 
+    /* Fond noir */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.384); /* Couleur rouge de la poignée */
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: rgba(255, 0, 0, 0.767); /* Couleur rouge de la poignée */
+    border-radius: 4px;
+  }
