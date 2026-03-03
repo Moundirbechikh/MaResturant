@@ -5,7 +5,7 @@ const Citation = () => {
     <>
       {/* Titre principal : inchangé sur desktop, centré et plus grand sur mobile/tablette */}
       <h1 className="flex md:justify-start px-10 pt-1 pb-3 
-                      text-white font-cursive 
+                      text-white font-cursive font-bold
                      sm:text-center text-6xl sm:text-7xl md:text-7xl lg:text-9xl flex-col md:flex-row">
         <span className="text-red-600 text-7xl md:text-7xl lg:text-9xl">Ma</span> <span>Resturant</span>
       </h1>
