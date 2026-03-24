@@ -11,7 +11,10 @@ app.use(express.json());
 // 📁 Servir les fichiers statiques (images)
 app.use("/images", express.static(path.join(__dirname, "..", "Frontend", "public", "images")));
 
-
+app.get('/keep-alive', (req, res) => {
+  console.log("Ping reçu ! Le serveur reste éveillé.");
+  res.status(200).send('Instance active');
+});
 
 // 🔗 Importer les routes du menu
 const menuRoutes = require("./routes/menu");
