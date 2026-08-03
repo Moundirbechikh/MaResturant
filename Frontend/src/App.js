@@ -11,7 +11,7 @@ function App() {
         // On fait une requête vers l'API des avis pour réveiller le serveur.
         // N'oublie pas de changer localhost par l'URL de ton backend Render en production !
         // Exemple : "https://ton-backend.onrender.com/api/Rate"
-        await fetch("http://localhost:5000/keep-alive");
+        await fetch("https://maresturant.onrender.com/keep-alive");
         
         // Dès qu'on a une réponse (même si c'est une erreur 404/500, ça veut dire que le serveur est réveillé)
         setIsBackendReady(true);
